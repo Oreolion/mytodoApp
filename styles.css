@@ -26,10 +26,11 @@ br {
 
 h1 {
   color: goldenrod;
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin-bottom: 1.5rem;
   text-decoration: line-through;
+  text-shadow: 3px 6px 3px rgba(0, 0, 0, 0.8);
 }
 
 h3 {
@@ -37,6 +38,8 @@ h3 {
   font-size: 1.4rem;
   margin-bottom: 2rem;
   font-weight: bolder;
+
+
 }
 
 span {
@@ -81,7 +84,7 @@ form input {
   background: khaki;
   /* background: linear-gradient(to right, rgb(9, 250, 238), khaki); */
 
-  &:active {
+  &:focus {
     background: #fff;
   }
 }
@@ -97,6 +100,8 @@ form input {
   font-weight: bold;
   cursor: pointer;
   border: none;
+  box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.8);
+
 
   &:hover {
     background-color: rgb(27, 14, 4);
