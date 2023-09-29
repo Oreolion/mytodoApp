@@ -1,0 +1,260 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background: linear-gradient(to right, rgb(9, 250, 238), khaki);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  margin-top: 7rem;
+}
+
+br {
+  display: none;
+}
+
+h1 {
+  color: goldenrod;
+  font-size: 3rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-bottom: 1.5rem;
+  text-decoration: line-through;
+}
+
+h3 {
+  color: green;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  font-weight: bolder;
+}
+
+span {
+  color: green;
+}
+
+span + span {
+  color: red;
+  margin-right: 4px;
+}
+span + span + span {
+  color: green;
+  margin-right: 4px;
+}
+
+form {
+  height: 4rem;
+}
+
+label {
+  font-size: 2rem;
+}
+
+form input {
+  height: 3rem;
+  width: 13rem;
+  margin-right: 1rem;
+  padding-left: 6px;
+}
+
+.nameinput {
+  text-align: center;
+  height: 3rem;
+  width: 8.5rem;
+  border-radius: 4rem;
+  border: none;
+  padding: 1.5rem 1.5rem 1.5rem 0.5rem;
+  font-size: 1.9rem;
+  font-weight: bolder;
+  color: green;
+  font-family: monospace;
+  background: khaki;
+  /* background: linear-gradient(to right, rgb(9, 250, 238), khaki); */
+
+  &:active {
+    background: #fff;
+  }
+}
+
+.nameinput::placeholder {
+  font-size: 1rem;
+}
+
+#add-todo {
+  padding: 1.4rem;
+  background-color: cadetblue;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    background-color: rgb(27, 14, 4);
+    color: green;
+    letter-spacing: 1px;
+  }
+
+  &:active {
+    font-size: 1.3rem;
+  }
+}
+
+.each__todo {
+  display: flex;
+  width: 33rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1.2rem;
+  /* font-size: 1rem; */
+  text-transform: uppercase;
+  background-color: darkgray;
+  padding: 1.3rem;
+  border-end-end-radius: 4rem;
+  border-start-start-radius: 4rem;
+  box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.8);
+}
+
+.each__todo:last-child {
+  margin-bottom: 4rem;
+}
+
+.edit__todo,
+.delete__todo {
+  background-color: red;
+  height: 2rem;
+  margin-right: 2rem;
+  padding: 1.2rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
+  &:hover {
+    background-color: black;
+    color: red;
+    font-weight: bolder;
+  }
+  &:active {
+    font-size: 1.3rem;
+  }
+}
+
+.edit__todo {
+  background-color: darkolivegreen;
+  margin-left: 4rem;
+  margin-right: 1rem;
+  &:hover {
+    background-color: yellow;
+    color: green;
+  }
+  &:active {
+    background-color: yellow;
+    color: green;
+    font-size: 1.2rem;
+  }
+}
+
+.checkbtn {
+  margin-left: 2rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.input {
+  width: 27rem;
+  height: 4rem;
+  color: goldenrod;
+  background: linear-gradient(to right, rgb(9, 250, 238), khaki);
+  outline: none;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 0.5rem;
+  overflow-wrap: break-word;
+  &:focus {
+    background: #fff;
+    color: #000;
+  }
+}
+
+.done {
+  text-decoration: line-through;
+  font-size: 1.2rem;
+}
+
+footer {
+  color: red;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  position: fixed;
+  inset: 94% 0 0 72.5%;
+}
+
+@media (max-width: 500px) {
+  br {
+    display: inline;
+  }
+
+  h1 {
+    margin-bottom: 0.1rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 0 0.5rem;
+  }
+
+  .each__todo {
+    width: 26rem;
+    height: 8rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    text-align: center;
+  }
+
+  input {
+    margin-top: 2rem;
+  }
+
+  .input {
+    width: 8rem;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    padding: 0.5rem;
+  }
+
+  .checkbtn {
+    margin-left: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  footer {
+    color: red;
+    position: fixed;
+    inset: 97% 0 0 12.5%;
+  }
+}
