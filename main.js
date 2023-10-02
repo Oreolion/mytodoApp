@@ -49,14 +49,6 @@ function updateDisplay() {
     const editBtn = document.createElement("button");
     const checkDoneBtn = document.createElement("input");
     eachTodoBox.innerHTML = `<textarea rows="3" cols="10" class="input" readonly>${todo.todoItem}`;
-    // window.onresize = () => {
-
-    //     if (window.innerWidth == "500px") {
-    //         eachTodoBox.innerHTML = `<input type="text" class="input" readonly>${todo.todoItem}`;
-    //         updateDisplay()
-    //     }
-
-    // }
     
     
     
