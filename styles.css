@@ -231,10 +231,22 @@ footer {
   }
 
   .each__todo {
-    width: 26rem;
+    width: 24rem;
     height: 8rem;
     justify-content: center;
     align-items: center;
+  }
+
+  .delete__todo{
+    padding: .8rem;
+
+  } 
+
+  .edit__todo {
+    margin-left: 2rem;
+    padding: .8rem;
+
+
   }
 
   form {
@@ -247,7 +259,7 @@ footer {
 
   .input {
     width: 19rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 1.2rem;
     padding: 0.5rem;
   }
