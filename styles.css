@@ -237,6 +237,10 @@ footer {
     align-items: center;
   }
 
+  .each__todo:last-child {
+    margin-bottom: 4rem;
+  }
+
   .delete__todo{
     padding: .8rem;
 
@@ -260,12 +264,12 @@ footer {
   .input {
     width: 25rem;
     font-size: 1rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
     padding: 0.5rem;
   }
 
   .checkbtn {
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-bottom: 2.5rem;
   }
 
