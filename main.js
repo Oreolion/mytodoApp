@@ -4,7 +4,7 @@ const todoButton = document.querySelector("#add-todo");
 const input = document.querySelector("#todo-input");
 const nameInput = document.querySelector(".nameinput");
 const todoList = document.querySelector("#listOfTodos");
-window.focus()
+// window.focus()
 let todo;
 
 const username = localStorage.getItem("username") || "";
