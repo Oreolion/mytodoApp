@@ -61,7 +61,7 @@ form {
 }
 
 label {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 form input {
@@ -242,6 +242,7 @@ footer {
   margin-bottom: 0;
   padding-bottom: 0;
   position: fixed;
+  font-size: .9rem;
   inset: 94% 0 0 72.5%;
 }
 
@@ -257,6 +258,10 @@ footer {
   h3 {
     font-size: 1.5rem;
     text-align: center;
+  }
+
+  label {
+    font-size: 1.5rem;
   }
 
  
