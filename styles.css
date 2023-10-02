@@ -243,11 +243,13 @@ footer {
 
   .delete__todo{
     padding: .8rem;
+    margin-right: 1rem;
 
   } 
 
   .edit__todo {
     margin-left: 2rem;
+    margin-right: 1rem;
     padding: .8rem;
 
 
