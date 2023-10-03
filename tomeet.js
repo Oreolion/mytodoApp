@@ -1,5 +1,5 @@
 
-let todos = JSON.parse(localStorage.getItem("todos")) || [];
+let tomeets = JSON.parse(localStorage.getItem("tomeets")) || [];
 const todoButton = document.querySelector("#add-todo");
 const input = document.querySelector("#todo-input");
 const nameInput = document.querySelector(".nameinput");
@@ -26,8 +26,8 @@ todoButton.addEventListener("click", (e) => {
     }
 };
 
-  todos.push(todo);
-  localStorage.setItem("todos", JSON.stringify(todos));
+  tomeets.push(todo);
+  localStorage.setItem("tomeets", JSON.stringify(tomeets));
   input.value = "";
 
 
@@ -43,7 +43,7 @@ function updateDisplay() {
   todo.addColon()
 
 
-  todos.forEach(todo => {
+  tomeets.forEach(todo => {
     const eachTodoBox = document.createElement("div");
     const deleteBtn = document.createElement("button");
     const editBtn = document.createElement("button");
@@ -70,8 +70,8 @@ function updateDisplay() {
     eachTodoBox.append(deleteBtn);
 
     deleteBtn.addEventListener("click", (e) => {
-      todos = todos.filter((t) => t !== todo);
-      localStorage.setItem("todos", JSON.stringify(todos));
+      tomeets = tomeets.filter((t) => t !== todo);
+      localStorage.setItem("tomeets", JSON.stringify(tomeets));
       updateDisplay();
     });
 
@@ -83,7 +83,7 @@ function updateDisplay() {
       input.addEventListener("blur", (e) => {
         input.setAttribute("readonly", true);
         todo.todoItem = e.target.value;
-        localStorage.setItem("todos", JSON.stringify(todos));
+        localStorage.setItem("tomeets", JSON.stringify(tomeets));
         updateDisplay();
       });
     });
@@ -91,7 +91,7 @@ function updateDisplay() {
     checkDoneBtn.addEventListener("click", (e) => {
       todo.done = checkDoneBtn.checked
       eachTodoBox.querySelector(".input").classList.toggle("done");
-      localStorage.setItem("todos", JSON.stringify(todos));
+      localStorage.setItem("tomeets", JSON.stringify(tomeets));
       console.log(todo.done);
     });
   });
