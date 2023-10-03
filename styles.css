@@ -117,6 +117,15 @@ form input {
   &:active {
     font-size: 1.3rem;
     text-decoration: line-through;
+    background-color: rgb(27, 14, 4);
+    color: green;
+  }
+
+  &:focus{
+    /* background-color: rgb(27, 14, 4); */
+    background-color: black;
+    color: green;
+    letter-spacing: 1px;
   }
 }
 
